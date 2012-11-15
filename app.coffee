@@ -11,7 +11,8 @@ app.get "/", (req, res) ->
     res.render "index.jade", ragots: ragots
 
 app.post '/ragots', (req, res) ->
-  redisClient.lpush 'ragots', req.params.ragot
-  res.status 201
+  redisClient.lpush 'ragots', req.params.ragot, () ->
+    res.status 201
+    res.end()
 
 app.listen 3000
