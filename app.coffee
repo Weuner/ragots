@@ -4,6 +4,8 @@ redis = require 'redis'
 app = express()
 redisClient = redis.createClient()
 
+app.use express.logger()
+
 app.get "/", (req, res) ->
   redisClient.lrange 'ragots', 0, -1, (err, ragots) ->
     res.render "index.jade", ragots: ragots
