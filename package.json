@@ -1,0 +1,23 @@
+{
+  "name": "ragots",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~3.0.3",
+    "hiredis": "~0.1.14",
+    "jade": "~0.27.7",
+    "redis": "~0.8.2",
+    "async": "~0.1.22",
+    "socket.io": "~0.9.11",
+    "underscore", : "~1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
